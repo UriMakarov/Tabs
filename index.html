@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabs</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    
+    <div class="tabs">
+        <div class="tabs__nav">
+            <button class="tabs__nav-btn active" type="button" data-tab="#tab_1">Feedback form</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Todo List</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Tab 3</button>
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__item  active" id="tab_1">
+                <form class="feedback-form">
+                    <h1 class="feedback-form__title">Форма обратной связи</h1>
+                    <p>
+                        <label">Ваше имя :</label>
+                   
+                        <input type="text" name="feedback-form__name" class="feedback-name" required>
+                    </p>
+                    <p>
+                        <label">Ваш email :</label>
+                        <input type="email" name="feedback-form__email" class="feedback-email" required>
+                    </p>
+                    <p>
+                        <label for="feedback">Ваш отзыв:</label>
+                        <input type="text" name="feedback-form__text" class="feedback-text" required>
+                    </p>
+
+                    <button type="submit" class="feedback-form__button">Отправить</button>
+
+                </form>
+            </div>
+
+            <div class="tabs__item" id="tab_2">
+                <div class="todo-wrapper">
+                    <p class="todo__title">Todos</p>
+                    <form class="todo__form">
+                        <input type="text" class="todo__text-input" placeholder="Введите задачу" />
+                        <input type="number" class="todo__time-input" placeholder="Введите время задачи" />
+                        <button class="todo__create-button">Добавить</button>
+                    </form>
+                    <div class="flex">
+                        <button class="todo__sort-button done">Сортировка по done</button>
+                        <button class="todo__sort-button time">Сортировка по time</button>
+                    </div>
+                    <ul class="todo__list"></ul>
+                    <p class="todo__time">
+                        <span class="todo__time-message">Общее время:</span>
+                        <span class="todo__time-value"></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tabs__item" id="tab_3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat fugit vitae corporis
+                    laboriosam eligendi.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="module"></script>
 </body>
+
 </html>

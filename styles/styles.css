@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.tabs {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.tabs__nav {
+  display: flex;
+}
+.tabs__nav-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #f5f5f5;
+  border: 0;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+}
+.tabs__nav-btn:last-child {
+  border-right: none;
+}
+.tabs__nav-btn:hover {
+  background-color: #ddd;
+}
+.tabs__nav-btn.active {
+  background-color: #5e3ddf;
+  border-right-color: #5e3ddf;
+  color: #fff;
+}
+.tabs__content {
+  padding: 30px;
+  background-color: #fff;
+}
+.tabs__item {
+  display: none;
+}
+.tabs__item.active {
+  display: block;
+}
+
+.feedback-form {
+  max-width: 500px;
+  padding-right: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 30px;
+  background-color: azure;
+  border: 1px solid;
+  border-radius: 4px;
+  color: black;
+}
+.feedback-form__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.todo-wrapper {
+  width: 100%;
+  max-width: 520px;
+  padding: 20px;
+  background-color: azure;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.todo__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.todo__form {
+  display: flex;
+  margin-bottom: 40px;
+}
+.todo__text-input {
+  width: 100%;
+  margin-right: 4px;
+}
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo__item.done .todo__item-text {
+  text-decoration: line-through;
+}
+
+button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 20px;
+}
+.flex .todo__sort-button:first-child {
+  margin-right: 20px;
+}/*# sourceMappingURL=styles.css.map */
